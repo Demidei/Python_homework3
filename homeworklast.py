@@ -24,14 +24,14 @@ if len(sys.argv) == 2:
                     break
                 if simple:
                     print(N, " - простое число ", end="")
-                    logging.info("{N} - simple - {simple} ")
+                    logging.info(f"{N} - simple - {simple} ")
                 else:
                     print(N, " - составное число ", end="")
-                    logging.info("{N} - simple - {simple} ")
+                    logging.info(f"{N} - simple - {simple} ")
             else:
                 print(
                     "Числа 0 и 1 не являются ни простыми, ни составными - это особый случай", end="")
-                logging.info("{N} - special case")
+                logging.info(f"{N} - special case")
         else:
             logging.error("Argument out of range")
             print("Введите целое число от 0 до 100 000", end="")
